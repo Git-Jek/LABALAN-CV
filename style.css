@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: transparent;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    border-radius: 50%;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.resume-container {
+    width: 100vw;
+    background-color: #f5f5f5;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr 0.5fr;
+}
+
+.left-banner {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border-radius: 20px;
+    margin: 120px 0px 0px 40px;
+    width: 400px;  
+    background-color: #000000;
+    background-position: center;
+    background-size: cover;
+}
+
+.contact-banner {
+    height: 250px;
+    border-radius: 20px;
+    margin-top: 130px;
+    width: 350px;
+    background-color: #1d1d1d; 
+    background-size: cover;
+    padding: 20px;
+}
+
+.phone-logo, .email-logo, .address-logo {
+    border-radius: 5px;
+    background-color: #000000;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin: 20px 0px 0px 8px;
+}
+
+.phone-logo {
+    background-image: url(assets/images/phone-logo.png);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+.email-logo {
+    background-image: url(assets/images/email-logo.png);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    margin-top: 90px;
+}
+
+.address-logo {
+    background-image: url(assets/images/gps-logo.png);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    margin-top: 160px;
+}
+
+.fullname {
+    color: #f5f5f5;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 50px;
+}
+.profession {
+    color: #a6a6a6;
+    background-color: #1d1d1d;
+    border-radius: 5px;
+    font-weight: 100;
+    text-align: center;
+    margin: 5px 0px 0px 95px;
+    width: 160px;
+    height: 30px;
+    padding-top: 5px;
+}
+
+.fb-logo, .ig-logo, .tiktok-logo, .dc-logo {
+    border-radius: 5px;
+    background-color: #1d1d1d;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-top: 40px;
+}
+
+.fb-logo {
+    margin-left: 50px;
+    background-image: url(assets/images/fb-logo.png);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.ig-logo {
+    margin-left: 120px;
+    background-image: url(assets/images/ig-logo.png);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.tiktok-logo {
+    margin-left: 190px;
+    background-image: url(assets/images/tiktok-logo.png);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.dc-logo {
+    margin-left: 260px;
+    background-image: url(assets/images/dc-logo.png);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.email, .phone, .address {
+    color: #f5f5f5;
+    font-size: 16px;
+    margin: 5px;
+    padding: 5px 5px 5px 50px;
+}
+
+.email, .phone {
+    border-bottom: 1px solid #a6a6a6;
+}
+
+#email-text, #phone-text, #address-text {
+    color: #a6a6a6;
+    font-size: 12px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.profile-pic {
+    position: absolute;
+    margin-left: 150px;
+    background-color: transparent;
+}
+
+.right-banner {
+    height: auto;
+    width: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 20px;
+    margin: auto;
+    background-color: #000000;
+    color: #a6a6a6;
+}
+
+.work-exp {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border: 2px solid rgb(33, 36, 37);
+    border-radius: 20px;
+    text-align: start;
+    margin: 20px;
+    padding: 20px;
+}
+
+.work-exp p {
+    padding-top: 10px;
+}
+
+.education {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    border: 2px solid rgb(33, 36, 37);
+    border-radius: 20px;
+    text-align: start;
+    margin: 20px;
+    padding: 20px;
+}
+
+.education h3 {
+    font-style: italic;
+    padding-top: 10px;
+}
+
+.education p {
+    padding-top: 5px;
+}
+
+.skills {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    border: 2px solid rgb(33, 36, 37);
+    border-radius: 20px;
+    text-align: start;
+    margin: 20px;
+    padding: 20px;
+}
+
+.skills li {
+    padding-top: 10px;
+}
+
+.languages {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    border: 2px solid rgb(33, 36, 37);
+    border-radius: 20px;
+    text-align: start;
+    margin: 20px;
+    padding: 20px;
+}
+
+.languages li {
+    padding-top: 10px;
+}
+
+.hobbies {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border: 2px solid rgb(33, 36, 37);
+    border-radius: 20px;
+    text-align: start;
+    margin: 20px;
+    padding: 20px;
+}
+
+.hobbies li {
+    padding-top: 10px;
+}
+
+.references {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    border: 2px solid rgb(33, 36, 37);
+    border-radius: 20px;
+    text-align: start;
+    margin: 20px;
+    padding: 20px;
+}
+
+.references p {
+    padding-top: 10px;
+}
+
+.certifications, .links, .summary {
+    padding: 10px;
+}
+
+.certifications li, .links li, .summary p {
+    padding-top: 10px;
+}
+
+.header {
+    color: #f5f5f5;
+}
+
+.icon {
+    padding-right: 20px;
+}
+
+.bottom-banner{
+    height: auto;
+    grid-column: 2/4;
+    border-radius: 20px;
+    margin: auto;
+    background-color: #000000;
+    color: #a6a6a6;
+    text-align: center;
+    width: 80%;
+}
+
+@media only screen and (max-width: 768px) {
+    .resume-container {
+        display: block;
+    }
+    img {
+        height: 150px;
+    }
+    .profile-pic {
+        margin:20px 0px 0px 20px;
+    }
+
+    .fullname {
+        margin: 0px 0px 0px 150px;
+        font-size: 10px;
+    }
+    .profession {
+        margin: 0px 0px 0px 140px;
+        font-size: 10px;
+        width: 100px;
+        height: 20px;
+    }
+    .logo {
+        margin-top: 30px;
+    }
+    .left-banner{
+        margin: 0px;
+        width: 436px;
+        border-radius: 0;
+    }
+   .right-banner {
+    display: inline-block;
+    height: auto;
+    border-radius: 0;
+    width: 436px;
+   }
+   .bottom-banner {
+    border-radius: 0;
+    text-align: start;
+    width: 436px;
+    margin: 0px;
+   }
+   .certifications, .links, .summary {
+    margin-top: 0px;
+    font-size: 13px;
+    }
+}
